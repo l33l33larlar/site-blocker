@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Blocker — ပိတ်ထားတဲ့စာရင်း</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="options">
+  <main class="page">
+    <header class="page-head">
+      <img src="icons/icon128.png" alt="" width="44" height="44">
+      <div>
+        <h1>Site Blocker</h1>
+        <p class="muted">စာရင်းထဲက ဆိုက်တွေကို ဖွင့်ရင် "ပိတ်ထားပါတယ်" ဆိုတဲ့ စာမျက်နှာပဲ ပေါ်ပါမယ်။</p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>ဆိုက်အသစ် ထည့်မယ်</h2>
+      <form id="add-form" class="add-form">
+        <input type="text" id="add-input" placeholder="ဥပမာ example.com" autocomplete="off" spellcheck="false" aria-label="ဆိုက်နာမည်">
+        <button type="submit" class="btn btn-primary">ထည့်မယ်</button>
+      </form>
+      <p class="note" id="add-msg" hidden></p>
+    </section>
+
+    <section class="panel">
+      <h2>ဒီ ၇ ရက်အတွင်း ဖွင့်ဖို့ကြိုးစားခဲ့တဲ့ အကြိမ်</h2>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="panel">
+      <h2 id="list-title">ပိတ်ထားတဲ့ဆိုက်များ</h2>
+      <p class="muted" id="rule-note"></p>
+      <ul class="site-list" id="list"></ul>
+      <p class="empty" id="empty" hidden>စာရင်းထဲမှာ ဘာမှ မရှိသေးပါ။ ပိတ်ချင်တဲ့ဆိုက်ကို ဖွင့်ထားရင်း toolbar က Site Blocker icon ကို နှိပ်ပြီး "ပိတ်မယ်" ကို နှိပ်ပါ။</p>
+    </section>
+  </main>
+  <script src="shared.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

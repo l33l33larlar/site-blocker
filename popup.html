@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <title>Site Blocker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+  <header class="popup-head">
+    <img src="icons/icon48.png" alt="" width="24" height="24">
+    <strong>Site Blocker</strong>
+  </header>
+
+  <section class="popup-current">
+    <p class="label">အခု ဖွင့်ထားတဲ့ဆိုက်</p>
+    <p class="current-host" id="host"></p>
+    <p class="note" id="status" hidden></p>
+    <button type="button" class="btn btn-primary btn-block" id="block-main" hidden></button>
+    <button type="button" class="btn btn-block" id="block-alt" hidden></button>
+  </section>
+
+  <footer class="popup-foot">
+    <p id="summary"></p>
+    <a href="#" id="open-list">ပိတ်ထားတဲ့စာရင်း ကြည့်မယ် / ပြင်မယ်</a>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
